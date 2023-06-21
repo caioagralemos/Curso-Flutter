@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
+options: "ca8317e3a39e51373fd55a15bd6428f094f9a6ccccc65cf372e939ec07d42fbf"
+build_start_time: [1687364695, 172517000]
+build_end_time: [1687364714, 308136000]
+inputs:
+  "/Users/macbook/Desktop/Curso-Flutter/5 - Meu Primeiro App/app/macos/Flutter/GeneratedPluginRegistrant.swift": [1687364654, 572260944]
+  "/Users/macbook/Desktop/Curso-Flutter/5 - Meu Primeiro App/app/macos/Runner/AppDelegate.swift": [1686177027, 0]
+  "/Users/macbook/Desktop/Curso-Flutter/5 - Meu Primeiro App/app/macos/Runner/MainFlutterWindow.swift": [1686177027, 0]
