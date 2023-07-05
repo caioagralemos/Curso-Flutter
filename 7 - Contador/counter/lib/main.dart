@@ -14,27 +14,32 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Counter'),
-        ),
-        body: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            ElevatedButton(
-            onPressed: increment, child: const Text('Incrementar')),
-            SizedBox(
-              width: 12,
-            ), // Padding
-            ElevatedButton(
-            onPressed: decrement, child: const Text('Decrementar')),
-          ],
-          )
-      ),
+          appBar: AppBar(
+            title: const Text('Counter'),
+          ),
+          body: Column(
+            children: [
+              Padding(padding: EdgeInsets.all(30),),
+              const Text('CONTADOR'),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  ElevatedButton(
+                      onPressed: increment, child: const Text('Incrementar')),
+                  SizedBox(
+                    width: 12,
+                  ), // Padding Horizontal
+                  ElevatedButton(
+                      onPressed: decrement, child: const Text('Decrementar')),
+                ],
+              )
+            ],
+          )),
     );
   }
 }
 
-class CounterView extends State<Counter> {
+class CounterView extends State {
   var counter = 0;
 
   void increment() {}
