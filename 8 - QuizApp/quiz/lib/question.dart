@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class QuestionTitle extends StatelessWidget {
-  const QuestionTitle({String this.text});
+  const QuestionTitle({required this.text});
 
   final String text;
 
