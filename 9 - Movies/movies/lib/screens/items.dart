@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movies/data/dummy.dart';
 import 'package:movies/models/category.dart';
 
 class MoviesScreen extends StatelessWidget {
@@ -11,7 +12,13 @@ class MoviesScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(category.title),
       ),
-      body: const Text('Lista de filmes'),
+      body: Center(
+        child: Column(
+          children: category.movies.map((movie) {
+            return Text(movie.title);
+      }).toList(),
+        ),
+      )
     );
   }
 }
