@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:minimal/screens/categories.dart';
+import 'package:minimal/screens/login.dart';
+import 'package:minimal/screens/menu.dart';
+import 'package:minimal/screens/movie.dart';
+import 'package:minimal/screens/movies.dart';
+import 'package:minimal/utils/routes.dart';
 
 void main() {
   runApp(const QuizAdmin());
@@ -10,11 +16,14 @@ class QuizAdmin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('QuizAdmin App'),
-        ),
-      ),
+      routes: {
+        Routes.login: (context) => const LoginScreen(),
+        Routes.menu: (context) => const MenuScreen(),
+        Routes.categories: (context) => const CategoriesScreen(),
+        Routes.category: (context) => const CategoriesScreen(),
+        Routes.movies: (context) => const MoviesScreen(),
+        Routes.movie: (context) => const MovieScreen(),
+      },
     );
   }
 }
