@@ -7,11 +7,11 @@ import 'package:minimal/screens/movies.dart';
 import 'package:minimal/utils/routes.dart';
 
 void main() {
-  runApp(const QuizAdmin());
+  runApp(const MoviesAdmin());
 }
 
-class QuizAdmin extends StatelessWidget {
-  const QuizAdmin({super.key});
+class MoviesAdmin extends StatelessWidget {
+  const MoviesAdmin({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class QuizAdmin extends StatelessWidget {
         Routes.movie: (context) => const MovieScreen(),
       },
     );
-  }
+  } 
 }
 
 // Scaffold é uma classe em flutter que fornece muitos widgets,

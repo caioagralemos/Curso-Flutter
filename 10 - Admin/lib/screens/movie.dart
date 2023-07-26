@@ -7,7 +7,7 @@ class MovieScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Quiz Admin'),
+        title: const Text('Movies Admin'),
       ),
       body: const Text('Add or Update Movie'),
     );
