@@ -5,8 +5,13 @@ import 'package:minimal/screens/menu.dart';
 import 'package:minimal/screens/movie.dart';
 import 'package:minimal/screens/movies.dart';
 import 'package:minimal/utils/routes.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() {
+void main() async {
+  await Firebase.initializeApp(
+  options: DefaultFirebaseOptions.currentPlatform,
+);
   runApp(const MoviesAdmin());
 }
 
@@ -25,7 +30,7 @@ class MoviesAdmin extends StatelessWidget {
         Routes.movie: (context) => const MovieScreen(),
       },
     );
-  } 
+  }
 }
 
 // Scaffold é uma classe em flutter que fornece muitos widgets,
